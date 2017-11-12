@@ -1,0 +1,12 @@
+[{
+    "name": "The admin party",
+    "position": {
+        "lat": "1",
+        "long": "1"
+    },
+    "users": [
+        {
+            "user": "admin"
+        }
+    ]
+}]
