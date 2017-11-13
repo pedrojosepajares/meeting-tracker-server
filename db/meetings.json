@@ -5,8 +5,6 @@
         "long": "1"
     },
     "users": [
-        {
-            "user": "admin"
-        }
+        "admin"
     ]
 }]

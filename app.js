@@ -6,6 +6,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// DB Connection                                                                                                                                                                                                                                                                                                                                                                              
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/meeting-tracker');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error: '));
+db.once('open', function(){
+  console.log("Connected to db");
+})
+
+// Routing
 var meetings = require('./routes/meetings');
 var users = require('./routes/users');
 
